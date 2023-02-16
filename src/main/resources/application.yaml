@@ -1,0 +1,19 @@
+server:
+  port: 9090
+
+spring:
+  datasource:
+    name: h2
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:~/test
+    username: sa
+    password: sa
+  sql:
+    init:
+      encoding: utf-8
+      mode: always
+      platform: h2
+      username: sa
+      password: sa
+      data-locations: classpath:data-all.sql
+      schema-locations: classpath:schema-all.sql
